@@ -1,0 +1,25 @@
+{
+  "name": "env-conf-loader",
+  "version": "0.0.1",
+  "description": "auto load config file/directory with env",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "load",
+    "config",
+    "env"
+  ],
+  "repository": "cutsin/env-conf-loader",
+  "author": "Cutsin <cutsin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cutsin/env-conf-loader/issues"
+  },
+  "homepage": "https://github.com/cutsin/env-conf-loader",
+  "dependencies": {
+    "extend": "^2.0.0",
+    "require-yml": "~1.1.2"
+  }
+}

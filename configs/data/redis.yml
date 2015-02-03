@@ -1,0 +1,15 @@
+# redis conf
+
+port: 6379
+options:
+  connect_timeout: 10000
+
+## online / production
+production:
+  host: 3.3.3.3
+  options:
+    auth_pass: abcde
+
+## test / development
+development:
+  host: 127.0.0.1

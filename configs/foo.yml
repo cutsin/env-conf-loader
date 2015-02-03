@@ -1,0 +1,13 @@
+# conf
+
+bar: 0
+sth: true
+
+default:
+  bar: 1
+
+production:
+  bar: 2
+
+development:
+  bar: 3
