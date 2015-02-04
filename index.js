@@ -28,7 +28,7 @@ module.exports = function(target, fromCache, cb) {
 			delete json[reserved[0]]
 		}
 		// 2. cache env & remove reserved
-		if (!env) return json 
+		if (!~reserved.indexOf(env)) return json 
 		var envConf = json[env]
 		clean(json)
 		// 3. merge env to own
