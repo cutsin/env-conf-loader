@@ -5,25 +5,25 @@
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 
-[中文文档](README.zh-CN.md)
+[English Doc](README.md)
 
 ## Why?
 
-load configs from file/directory with current, merge object by object's key and environment variable.
+加载文件/文件夹中的配置，并根据配置文件的key和环境变量自动合并。
 
-## Install
+## 安装
 
 ```bash
 npm install evn-conf-loader
 ```
 
-## Usage
+## 使用
 
 ```javascript
 var loader = require('evn-conf-loader')
 ```
 
-### load a json file
+### 加载json
 
 foo.json
 ```json
@@ -34,7 +34,6 @@ foo.json
   "development": { "bar": 3, }
 }
 ```
-
 ```javascript
 var conf = loader('./foo.json')
 // NODE_ENV is undefined
@@ -45,7 +44,7 @@ console.log(conf.bar)  // 2
 console.log(conf.bar)  // 3
 ```
 
-### async load
+### 异步加载
 
 ```javascript
 loader('./foo.json', function(res){
@@ -53,7 +52,7 @@ loader('./foo.json', function(res){
 })
 ```
 
-### from cache
+### 启用缓存
 
 ```javascript
 loader('./foo.json', true, function(res){
