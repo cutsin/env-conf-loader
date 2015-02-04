@@ -3,8 +3,8 @@ var confLoader = require('../')
 var conf
 
 // not cover
-conf = confLoader('./configs')
-assert.ok(conf.foo.sth, true)
+conf = confLoader('./configs/data/mysql')
+assert.ok(conf.production)
 
 // covered by default
 conf = confLoader('./configs')

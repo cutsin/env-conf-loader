@@ -1,6 +1,6 @@
 {
   "name": "env-conf-loader",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "auto load config file/directory with env",
   "main": "index.js",
   "scripts": {
