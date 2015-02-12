@@ -1,4 +1,4 @@
-# evn-conf-loader
+# env-conf-loader
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -14,13 +14,13 @@ load configs from file/directory with current, merge object by object's key and 
 ## Install
 
 ```bash
-npm install evn-conf-loader
+npm install env-conf-loader
 ```
 
 ## Usage
 
 ```javascript
-var loader = require('evn-conf-loader')
+var loader = require('env-conf-loader')
 ```
 
 ### load a json file
@@ -71,11 +71,11 @@ npm test
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/evn-conf-loader.svg?style=flat
-[npm-url]: https://npmjs.org/package/evn-conf-loader
-[travis-image]: https://travis-ci.org/cutsin/evn-conf-loader.svg
-[travis-url]: https://travis-ci.org/cutsin/evn-conf-loader
-[downloads-image]: https://img.shields.io/npm/dm/evn-conf-loader.svg?style=flat
-[downloads-url]: https://npmjs.org/package/evn-conf-loader
-[coveralls-image]: https://img.shields.io/coveralls/cutsin/evn-conf-loader.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/cutsin/evn-conf-loader
+[npm-image]: https://img.shields.io/npm/v/env-conf-loader.svg?style=flat
+[npm-url]: https://npmjs.org/package/env-conf-loader
+[travis-image]: https://travis-ci.org/cutsin/env-conf-loader.svg
+[travis-url]: https://travis-ci.org/cutsin/env-conf-loader
+[downloads-image]: https://img.shields.io/npm/dm/env-conf-loader.svg?style=flat
+[downloads-url]: https://npmjs.org/package/env-conf-loader
+[coveralls-image]: https://img.shields.io/coveralls/cutsin/env-conf-loader.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/cutsin/env-conf-loader

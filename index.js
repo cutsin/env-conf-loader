@@ -24,7 +24,7 @@ module.exports = function(target, fromCache, cb) {
 	var iterator = function(json) {
 		// 1. merge default to own
 		if (json.hasOwnProperty(reserved[0])) {
-			extend(true, json, json[reserved[0]])
+			json = extend(true, json, json[reserved[0]])
 			delete json[reserved[0]]
 		}
 		// 2. cache env & remove reserved
@@ -32,7 +32,7 @@ module.exports = function(target, fromCache, cb) {
 		var envConf = json[env]
 		clean(json)
 		// 3. merge env to own
-		if (envConf) extend(true, json, envConf)
+		if (envConf) json = extend(true, json, envConf)
 		return json
 	}
 
